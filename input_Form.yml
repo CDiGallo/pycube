@@ -1,0 +1,124 @@
+---
+dataset-URI: "https://register.admin.ch/sfa/lottogewinnepython"
+name_DE: "lottogewinnepython"
+name_FR: ""
+name_IT: ""
+name_EN: ""  
+#dataset name as string in up to 4 languages
+description_DE: "lotto gewinne durch python"
+description_FR: ""
+description_IT: ""
+description_EN: ""
+#description as string in up to 4 languages
+
+contact-point name: "claudio di gallo" #name of individual or organization as string
+contact-point email: "claudio.digallo@bar.admin.ch" #email address as string
+
+source creation-date: "2024-07-05"  #must be formatted as xsd:date / ISO 8601 "yyyy-mm-dd"
+#source modification-date:"2024-07-05"  #must be formatted as xsd:dateTime
+dataset publication-date: "2024-07-05" #must be formatted as xsd:date / ISO 8601
+
+#Must have at least one of these
+work example application: "" #if applicable, must be the name of a custom application(s) such as "hydrodaten" or "strompreis" (separated by ";" if multiple)   must be formated as it is written in the https://ld.admin.ch/application/ URI
+work example visualize: "https://ld.admin.ch/application/visualize" #if applicable, must be url of dataset on visualize    if present, must have work example application visualize (or it will be written automatically)
+work example SPARQLendpoint: "" #if applicable, must be the URL of the SPARQL endpoint with the graph preselected
+
+SPARQL endpoint: "https://culture.ld.admin.ch/query/" #URL of the SPARQL endpoint
+
+
+#optional metadata
+dataset creator: "BAR" #URI of the organization responsible for the dataset, own URI or from Zefix
+dataset contributor: "BAFU" #URI of the organization contributing to the publishing and transforming of the dataset, own URI or from Zefix   only add if different from creator
+dataset publisher: "BAR" #URI of the platform or database used for publication usually <https://ld.admin.ch/org/lindas> 
+
+next modification date: #the date of the next planned update of the dataset, must be formatted as xsd:date / ISO 8601
+
+example resource: "soon-to-come" #URI of a triple / resource in the dataset which serves as an example for introduction to the dataset
+
+
+creative work status: "https://ld.admin.ch/vocabulary/CreativeWorkStatus/Published" #You can also choosse "draft" https://ld.admin.ch/vocabulary/CreativeWorkStatus/Draft
+
+
+#### Dimensions
+
+NumDimensions: 4
+
+dimname_de1: "Jahr"
+dimanme_fr1:
+dimdescription_de1: "Loremipsum"
+dimdescription_fr1:
+dimtype1: "https://cube.link/KeyDimension" #auch https://cube.link/MeasureDimension or empty
+scaletype1: "http://qudt.org/schema/qudt/IntervalScale" #to do find the other scale types, qudt:NominalScale
+unit1: "http://qudt.org/vocab/unit/YR_Common" #to do: show how to find all available on lindas (in a reasonable way)
+datatype1: "http://www.w3.org/2001/XMLSchema#gYear"
+#sh.max1
+#sh.min1
+nodeKind1: "Literal" # rdfs:comment "The class of all node kinds, including sh:BlankNode, sh:IRI, sh:Literal or the combinations of these: sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, sh:IRIOrLiteral."@en ;
+path1: # URI of the Dimensionproperty in an observation. For example Year in https://energy.ld.admin.ch/sfoe/bfe_ogd84_einmalverguetung_fuer_photovoltaikanlagen/9/observation/2014/AG
+datakind1: "Year"
+
+
+dimname_de2: "Katon"
+dimanme_fr2:
+dimdescription_de2: "Loremipsum"
+dimdescription_fr2:
+dimtype2: "https://cube.link/KeyDimension" #auch https://cube.link/MeasureDimension or empty
+scaletype2: "http://qudt.org/schema/qudt/NominalScale" #to do find the other scale types, qudt:NominalScale
+#unit2: "http://qudt.org/vocab/unit/YR_Common" #to do: show how to find all available on lindas (in a reasonable way)
+#datatype2: "http://www.w3.org/2001/XMLSchema#gYear"
+nodekind2: "Literal" # rdfs:comment "The class of all node kinds, including sh:BlankNode, sh:IRI, sh:Literal or the combinations of these: sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, sh:IRIOrLiteral."@en ;
+path2: # URI of the Dimensionproperty in an observation. For example Year in https://energy.ld.admin.ch/sfoe/bfe_ogd84_einmalverguetung_fuer_photovoltaikanlagen/9/observation/2014/AG
+#dataKind2: "Year"
+
+
+dimname_de3: "Anzahl gefundene Kleeblätter"
+dimanme_fr3:
+dimdescription_de3: "Loremipsum"
+dimdescription_fr3:
+dimtype3: "https://cube.link/MeasureDimension" #auch https://cube.link/MeasureDimension or empty
+scaletype3: "http://qudt.org/schema/qudt/RatioScale" #to do find the other scale types, qudt:NominalScale
+nodekind3: "Literal" # rdfs:comment "The class of all node kinds, including sh:BlankNode, sh:IRI, sh:Literal or the combinations of these: sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, sh:IRIOrLiteral."@en ;
+path3: # URI of the Dimensionproperty in an observation. For example Year in https://energy.ld.admin.ch/sfoe/bfe_ogd84_einmalverguetung_fuer_photovoltaikanlagen/9/observation/2014/AG
+
+
+dimname_de4: "Anzahl Lottogewinne"
+dimanme_fr4:
+dimdescription_de4: "Loremipsum"
+dimdescription_fr4:
+dimtype4: "https://cube.link/MeasureDimension" #auch https://cube.link/MeasureDimension or empty
+scaletype4: "http://qudt.org/schema/qudt/RatioScale" #to do find the other scale types, qudt:NominalScale
+nodekind4: "Literal" # rdfs:comment "The class of all node kinds, including sh:BlankNode, sh:IRI, sh:Literal or the combinations of these: sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, sh:IRIOrLiteral."@en ;
+path4: # URI of the Dimensionproperty in an observation. For example Year in https://energy.ld.admin.ch/sfoe/bfe_ogd84_einmalverguetung_fuer_photovoltaikanlagen/9/observation/2014/AG
+
+
+
+# The metadata for dimensions (Cube Designer tab in the Cube Creator)
+
+# For a display on a map: set dataKind to geographic shape for instance
+
+#       meta:dataKind [a <http://schema.org/GeoShape>] ;
+
+# There are 2 more 'property' than the dimensions: rdf:type (observation) and observedBy
+
+#       and rdf:type+observedBy seem mandatory if I read the comment of the cube validation shapes standalone-constraint-shape.ttl that says:
+
+#     sh:property [
+
+#                      # we assume at least 3 dimensions, otherwise we would have an empty list of dimensions
+
+#                      # one for cube:observedBy, one for rdf:type and at least one cube dimension
+
+#   but the 'type' is not defined currently, and it works
+
+# About sh:in clause: it is used to list all the possible values, to help Visualize to more quickly display the values for a filter
+
+#   It is not mandatory, but is recommanded for performance reasons
+
+#   it must thus be generated dynamically when transforming the input file
+
+#       see sparql-generate/run.sh for details
+
+
+               .
+
+ 
