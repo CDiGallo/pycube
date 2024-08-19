@@ -1,1370 +1,1210 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ns1: <http://schema.org/> .
+@prefix ns1: <https://register.admin.ch/sfa/lottogewinnepython/> .
 @prefix ns2: <https://cube.link/> .
-@prefix ns3: <https://register.admin.ch/sfa/> .
-@prefix ns4: <http://qudt.org/schema/qudt/> .
-@prefix ns5: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns3: <http://schema.org/> .
+@prefix ns4: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns5: <http://qudt.org/schema/qudt/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns3:lottogewinnepython a void:Dataset,
-        ns1:Dataset,
+<https://register.admin.ch/sfa/lottogewinnepython> a void:Dataset,
+        ns3:Dataset,
         dcat:Dataset,
         ns2:Cube ;
     dcterms:description "lotto gewinne durch python"@de ;
     dcterms:identifier "lottogewinnepython@claudio.ch" ;
-    dcterms:issued "2024-07-05T00:00:00"^^xsd:datetime ;
+    dcterms:issued "2024-07-05T00:00:00"^^xsd:date ;
     dcterms:publisher "https://opendata.swiss/organization/schweizerisches-bundesarchiv-bar" ;
     dcterms:rights <https://ld.admin.ch/vocabulary/TermsOfUse/Open-Use> ;
     dcterms:spatial "Switzerland"@en ;
     dcterms:title "lottogewinnepython"@de ;
     void:sparqlEndpoint "https://culture.ld.admin.ch/query/" ;
-    ns1:contactPoint [ ns1:email "claudio.digallo@bar.admin.ch" ;
-            ns1:name "claudio di gallo" ] ;
-    ns1:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Published> ;
-    ns1:dateCreated "2010-01-01"^^xsd:date,
+    ns3:contactPoint [ ns3:email "claudio.digallo@bar.admin.ch" ;
+            ns3:name "claudio di gallo" ] ;
+    ns3:dateCreated "2010-01-01"^^xsd:date,
         "2024-07-05"^^xsd:date ;
-    ns1:datePublished "2024-07-05"^^xsd:date ;
-    ns1:description "lotto gewinne durch python"@de ;
-    ns1:name "lottogewinnepython"@de ;
-    ns1:workExample <https://ld.admin.ch/application/visualize> ;
-    dcat:contactPoint [ a ns5:Organization ;
-            ns5:fn "claudio di gallo" ;
-            ns5:hasEmail "claudio.digallo@bar.admin.ch" ] ;
-    ns2:observationConstraint <https://register.admin.ch/sfa/lottogewinnepython/shape> ;
+    ns3:datePublished "2024-07-05"^^xsd:date ;
+    ns3:description "lotto gewinne durch python"@de ;
+    ns3:name "lottogewinnepython"@de ;
+    dcat:contactPoint [ a ns4:Organization ;
+            ns4:fn "claudio di gallo" ;
+            ns4:hasEmail "claudio.digallo@bar.admin.ch" ] ;
+    ns2:observationConstraint ns1:shape ;
     ns2:observationSet <https://register.admin.ch/sfa/lottogewinnepython/observation/> .
 
 <https://register.admin.ch/sfa/lottogewinnepython/Observation/> a ns2:ObservationSet ;
-    ns2:observation <https://register.admin.ch/sfa/lottogewinnepython2017/1>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/10>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/11>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/12>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/13>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/14>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/15>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/16>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/17>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/18>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/19>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/2>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/20>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/21>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/22>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/23>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/24>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/25>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/26>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/3>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/4>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/5>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/6>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/7>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/8>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/9>,
-        <https://register.admin.ch/sfa/lottogewinnepython2017/Switzerland>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/1>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/10>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/11>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/12>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/13>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/14>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/15>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/16>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/17>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/18>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/19>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/2>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/20>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/21>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/22>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/23>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/24>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/25>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/26>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/3>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/4>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/5>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/6>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/7>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/8>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/9>,
-        <https://register.admin.ch/sfa/lottogewinnepython2018/Switzerland>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/1>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/10>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/11>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/12>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/13>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/14>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/15>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/16>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/17>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/18>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/19>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/2>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/20>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/21>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/22>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/23>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/24>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/25>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/26>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/3>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/4>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/5>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/6>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/7>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/8>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/9>,
-        <https://register.admin.ch/sfa/lottogewinnepython2019/Switzerland>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/1>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/10>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/11>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/12>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/13>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/14>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/15>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/16>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/17>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/18>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/19>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/2>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/20>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/21>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/22>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/23>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/24>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/25>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/26>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/3>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/4>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/5>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/6>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/7>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/8>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/9>,
-        <https://register.admin.ch/sfa/lottogewinnepython2020/Switzerland>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/1>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/10>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/11>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/12>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/13>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/14>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/15>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/16>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/17>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/18>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/19>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/2>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/20>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/21>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/22>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/23>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/24>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/25>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/26>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/3>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/4>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/5>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/6>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/7>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/8>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/9>,
-        <https://register.admin.ch/sfa/lottogewinnepython2021/Switzerland>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/1>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/10>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/11>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/12>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/13>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/14>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/15>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/16>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/17>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/18>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/19>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/2>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/20>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/21>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/22>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/23>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/24>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/25>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/26>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/3>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/4>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/5>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/6>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/7>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/8>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/9>,
-        <https://register.admin.ch/sfa/lottogewinnepython2022/Switzerland> .
+    ns2:observation <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/1>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/10>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/11>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/12>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/13>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/14>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/15>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/16>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/17>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/18>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/19>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/2>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/20>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/21>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/22>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/23>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/24>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/25>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/26>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/3>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/4>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/5>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/6>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/7>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/8>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/9>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2017/Switzerland>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/1>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/10>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/11>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/12>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/13>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/14>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/15>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/16>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/17>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/18>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/19>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/2>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/20>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/21>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/22>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/23>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/24>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/25>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/26>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/3>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/4>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/5>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/6>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/7>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/8>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/9>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2018/Switzerland>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/1>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/10>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/11>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/12>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/13>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/14>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/15>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/16>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/17>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/18>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/19>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/2>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/20>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/21>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/22>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/23>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/24>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/25>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/26>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/3>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/4>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/5>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/6>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/7>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/8>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/9>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2019/Switzerland>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/1>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/10>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/11>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/12>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/13>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/14>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/15>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/16>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/17>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/18>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/19>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/2>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/20>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/21>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/22>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/23>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/24>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/25>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/26>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/3>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/4>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/5>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/6>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/7>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/8>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/9>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2020/Switzerland>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/1>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/10>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/11>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/12>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/13>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/14>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/15>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/16>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/17>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/18>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/19>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/2>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/20>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/21>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/22>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/23>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/24>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/25>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/26>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/3>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/4>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/5>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/6>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/7>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/8>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/9>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2021/Switzerland>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/1>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/10>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/11>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/12>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/13>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/14>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/15>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/16>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/17>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/18>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/19>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/2>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/20>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/21>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/22>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/23>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/24>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/25>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/26>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/3>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/4>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/5>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/6>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/7>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/8>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/9>,
+        <https://register.admin.ch/sfa/lottogewinnepython/observation/2022/Switzerland> .
 
-<https://register.admin.ch/sfa/lottogewinnepython/shape> a sh:NodeShape,
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/1> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/10> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/11> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/12> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/13> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/14> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/15> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/16> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/17> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/18> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/19> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/2> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/20> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/21> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/22> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/23> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/24> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/25> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/26> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/3> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/4> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/5> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/6> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/7> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/8> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/9> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2017/Switzerland> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/1> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/10> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/11> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/12> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/13> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/14> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/15> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/16> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/17> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/18> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/19> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/2> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/20> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/21> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/22> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/23> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/24> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/25> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/26> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/3> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/4> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/5> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/6> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/7> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/8> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/9> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2018/Switzerland> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/1> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/10> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/11> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/12> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/13> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/14> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/15> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/16> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/17> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/18> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/19> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/2> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/20> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/21> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/22> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/23> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/24> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/25> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/26> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/3> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/4> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/5> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/6> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/7> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/8> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/9> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2019/Switzerland> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/1> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/10> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/11> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/12> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/13> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/14> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/15> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/16> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/17> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/18> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/19> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/2> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/20> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/21> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/22> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/23> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/24> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/25> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/26> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/3> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/4> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/5> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/6> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/7> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/8> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/9> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2020/Switzerland> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/1> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/10> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/11> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/12> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/13> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/14> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/15> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/16> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/17> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/18> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/19> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/2> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/20> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/21> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/22> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/23> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/24> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/25> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/26> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/3> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/4> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/5> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/6> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/7> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/8> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/9> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2021/Switzerland> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/1> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/10> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/11> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/12> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/13> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/14> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/15> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/16> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/17> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/18> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/19> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/2> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/20> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/21> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/22> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/23> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/24> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/25> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/26> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/3> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/4> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/5> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/6> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/7> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/8> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/9> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+<https://register.admin.ch/sfa/lottogewinnepython/observation//2022/Switzerland> ns2:observedBy "Mein Amt" ;
+    ns1:AnzahlLottogewinne 4.9e+00 ;
+    ns1:AnzahlgefundeneKleeblätter "9" ;
+    ns1:Jahr "2017" ;
+    ns1:Region "2" .
+
+ns1:shape a sh:NodeShape,
         ns2:Constraint ;
     sh:closed true ;
     sh:property [ a ns2:KeyDimension ;
-            ns4:scaleType ns4:NominalScale ;
-            ns1:description "None"@de ;
-            ns1:name "Katon"@de ;
-            sh:nodeKind "Literal" ],
+            ns5:scaleType ns5:NominalScale ;
+            ns3:description "None"@de ;
+            ns3:name "Katon"@de ;
+            sh:nodeKind "Literal" ;
+            sh:path <https://register.admin.ch/sfa/lottogewinnepythonRegion> ],
         [ a ns2:MeasureDimension ;
-            ns4:scaleType ns4:RatioScale ;
-            ns1:description "None"@de ;
-            ns1:name "Anzahl Lottogewinne"@de ;
-            sh:nodeKind "Literal" ],
+            ns5:scaleType ns5:RatioScale ;
+            ns3:description "None"@de ;
+            ns3:name "Anzahl Lottogewinne"@de ;
+            sh:nodeKind "Literal" ;
+            sh:path <https://register.admin.ch/sfa/lottogewinnepythonAnzahlLottogewinne> ],
         [ a ns2:KeyDimension ;
-            ns4:datatype xsd:gYear ;
-            ns4:scaleType ns4:IntervalScale ;
-            ns4:unit <http://qudt.org/vocab/unit/YR_Common> ;
-            ns1:description "None"@de ;
-            ns1:name "Jahr"@de ;
-            sh:nodeKind "None" ],
-        [ a ns2:KeyDimension ;
-            ns4:scaleType ns4:NominalScale ;
-            ns1:name "Beobachtet von"@de,
+            ns5:scaleType ns5:NominalScale ;
+            ns3:name "Beobachtet von"@de,
                 "Observed by"@en,
                 "Observé par"@fr,
                 "Osservato da"@it ;
             sh:in ns2:Observation ;
             sh:nodeKind sh:IRI ],
         [ a ns2:MeasureDimension ;
-            ns4:scaleType ns4:RatioScale ;
-            ns1:description "None"@de ;
-            ns1:name "Anzahl gefundene Kleeblätter"@de ;
-            sh:nodeKind "Literal" ] .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/1> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.07e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "267" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "1" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/10> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.26e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "186" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "10" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/11> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.3e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "90" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "11" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/12> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.85e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "145" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "12" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/13> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.33e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "93" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "13" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/14> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.3e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "13" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "14" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/15> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 7.2e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "32" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "15" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/16> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.13e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "273" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "16" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/17> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 7.1e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "31" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "17" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/18> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.51e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "111" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "18" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/19> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.02e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "62" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "19" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/2> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.9e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "9" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "2" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/20> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "160" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "20" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/21> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.88e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "148" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "21" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/22> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 7.7e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "37" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "22" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/23> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.01e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "561" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "23" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/24> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.98e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "158" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "24" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/25> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.4e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "24" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "25" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/26> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.02e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "262" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "26" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/3> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 7.3e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "33" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "3" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/4> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.17e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "277" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "4" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/5> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.25e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "185" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "5" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/6> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.4e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "100" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "6" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/7> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.07e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "167" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "7" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/8> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.6e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "120" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "8" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/9> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "20" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "9" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2017/Switzerland> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.342e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "3302" ;
-    ns3:lottogewinnepythonJahr "2017" ;
-    ns3:lottogewinnepythonRegion "Switzerland" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/1> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.005e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "965" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "1" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/10> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.27e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "87" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "10" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/11> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.85e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "545" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "11" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/12> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.79e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "139" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "12" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/13> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.84e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "344" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "13" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/14> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.27e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "287" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "14" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/15> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.17e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "77" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "15" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/16> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 9.8e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "58" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "16" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/17> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 9.33e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "893" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "17" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/18> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.74e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "134" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "18" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/19> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.48e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "408" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "19" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/2> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.4e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "400" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "2" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/20> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.07e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "167" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "20" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/21> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.81e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "541" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "21" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/22> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.82e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "542" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "22" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/23> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.33e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "93" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "23" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/24> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 8.49e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "809" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "24" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/25> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.08e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "568" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "25" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/26> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.22e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "82" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "26" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/3> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 7.1e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "31" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "3" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/4> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.6e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "120" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "4" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/5> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.173e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1133" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "5" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/6> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.57e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "417" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "6" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/7> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.6e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "220" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "7" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/8> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.3e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "590" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "8" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/9> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.39e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "199" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "9" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2018/Switzerland> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 9.889e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "9849" ;
-    ns3:lottogewinnepythonJahr "2018" ;
-    ns3:lottogewinnepythonRegion "Switzerland" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/1> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 8.26e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "786" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "1" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/10> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 7.61e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "721" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "10" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/11> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.63e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "223" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "11" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/12> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.14e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "574" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "12" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/13> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.03e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "363" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "13" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/14> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.32e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "92" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "14" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/15> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.41e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "101" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "15" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/16> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.198e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1158" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "16" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/17> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.41e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "201" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "17" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/18> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.15e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "475" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "18" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/19> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.77e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "237" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "19" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/2> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 9.4e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "54" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "2" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/20> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 7.67e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "727" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "20" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/21> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 8.23e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "783" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "21" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/22> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.32e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "92" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "22" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/23> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.713e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1673" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "23" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/24> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 8.47e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "807" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "24" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/25> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.17e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "77" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "25" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/26> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.44e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1400" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "26" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/3> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.32e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "192" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "3" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/4> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.623e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1583" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "4" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/5> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.09e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "569" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "5" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/6> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.52e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "312" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "6" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/7> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 8.52e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "812" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "7" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/8> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.6e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "420" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "8" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/9> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.89e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "149" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "9" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2019/Switzerland> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.4621e+03 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "14581" ;
-    ns3:lottogewinnepythonJahr "2019" ;
-    ns3:lottogewinnepythonRegion "Switzerland" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/1> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 7.85e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "745" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "1" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/10> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 9.09e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "869" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "10" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/11> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.7e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "230" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "11" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/12> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.053e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1013" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "12" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/13> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.07e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "467" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "13" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/14> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.52e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "112" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "14" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/15> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.37e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "97" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "15" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/16> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.564e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1524" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "16" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/17> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.84e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "244" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "17" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/18> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.19e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "579" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "18" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/19> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.2e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "280" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "19" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/2> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.07e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "67" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "2" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/20> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 8.37e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "797" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "20" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/21> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 9.39e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "899" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "21" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/22> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.52e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "112" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "22" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/23> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.734e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1694" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "23" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/24> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.016e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "976" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "24" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/25> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.23e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "83" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "25" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/26> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.553e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1513" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "26" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/3> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.28e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "188" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "3" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/4> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.973e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "2933" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "4" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/5> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 8.89e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "849" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "5" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/6> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.64e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "524" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "6" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/7> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.094e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1054" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "7" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/8> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.21e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "381" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "8" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/9> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.34e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "194" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "9" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2020/Switzerland> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.8464e+03 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "18424" ;
-    ns3:lottogewinnepythonJahr "2020" ;
-    ns3:lottogewinnepythonRegion "Switzerland" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/1> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.076e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1036" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "1" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/10> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 9.86e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "946" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "10" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/11> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.63e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "323" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "11" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/12> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.131e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1091" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "12" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/13> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.26e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "586" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "13" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/14> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.03e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "163" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "14" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/15> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.34e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "94" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "15" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/16> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.792e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1752" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "16" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/17> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "360" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "17" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/18> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.097e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1057" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "18" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/19> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.56e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "316" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "19" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/2> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 8.5e+00 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "45" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "2" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/20> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.181e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1141" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "20" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/21> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.156e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1116" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "21" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/22> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.69e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "129" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "22" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/23> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.067e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "2027" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "23" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/24> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.251e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1211" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "24" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/25> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.31e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "91" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "25" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/26> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.72e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "2680" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "26" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/3> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.89e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "249" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "3" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/4> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.071e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "4031" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "4" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/5> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.337e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1297" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "5" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/6> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.69e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "529" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "6" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/7> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.282e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1242" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "7" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/8> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.15e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "475" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "8" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/9> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.47e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "207" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "9" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2021/Switzerland> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.4234e+03 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "24194" ;
-    ns3:lottogewinnepythonJahr "2021" ;
-    ns3:lottogewinnepythonRegion "Switzerland" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/1> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.059e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "2019" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "1" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/10> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.16e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1120" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "10" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/11> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.24e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "384" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "11" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/12> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.206e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1166" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "12" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/13> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 6.56e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "616" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "13" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/14> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.37e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "97" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "14" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/15> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.41e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "101" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "15" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/16> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.797e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1757" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "16" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/17> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.89e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "449" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "17" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/18> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.159e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1119" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "18" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/19> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.1e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "470" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "19" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/2> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.24e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "84" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "2" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/20> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.405e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1365" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "20" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/21> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.475e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1435" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "21" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/22> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.87e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "147" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "22" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/23> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.191e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "2151" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "23" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/24> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.317e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1277" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "24" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/25> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.44e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "104" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "25" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/26> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.6e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "3560" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "26" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/3> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 3.35e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "295" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "3" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/4> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 4.083e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "4043" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "4" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/5> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.688e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1648" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "5" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/6> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.92e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "552" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "6" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/7> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 1.85e+02 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "1810" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "7" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/8> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 5.74e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "534" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "8" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/9> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.7e+01 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "230" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "9" .
-
-<https://register.admin.ch/sfa/lottogewinnepython2022/Switzerland> a ns2:Observation ;
-    ns2:observedBy "Mein Amt" ;
-    ns3:lottogewinnepythonAnzahlLottogewinne 2.8573e+03 ;
-    ns3:lottogewinnepythonAnzahlgefundeneKleeblätter "28533" ;
-    ns3:lottogewinnepythonJahr "2022" ;
-    ns3:lottogewinnepythonRegion "Switzerland" .
+            ns5:scaleType ns5:RatioScale ;
+            ns3:description "None"@de ;
+            ns3:name "Anzahl gefundene Kleeblätter"@de ;
+            sh:nodeKind "Literal" ;
+            sh:path <https://register.admin.ch/sfa/lottogewinnepythonAnzahlgefundeneKleeblätter> ],
+        [ a ns2:KeyDimension ;
+            ns5:datatype xsd:gYear ;
+            ns5:scaleType ns5:IntervalScale ;
+            ns5:unit <http://qudt.org/vocab/unit/YR_Common> ;
+            ns3:description "None"@de ;
+            ns3:name "Jahr"@de ;
+            sh:nodeKind "None" ;
+            sh:path <https://register.admin.ch/sfa/lottogewinnepythonJahr> ] .
 
