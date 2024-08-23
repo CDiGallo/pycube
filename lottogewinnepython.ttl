@@ -1180,18 +1180,24 @@
 ns1:shape a sh:NodeShape,
         ns2:Constraint ;
     sh:closed true ;
-    sh:property [ a ns2:KeyDimension ;
+    sh:property [ a ns2:MeasureDimension ;
+            ns4:scaleType ns4:RatioScale ;
+            ns3:description "None"@de ;
+            ns3:name "Anzahl Lottogewinne"@de ;
+            sh:nodeKind "Literal" ;
+            sh:path ns1:AnzahlLottogewinne ],
+        [ a ns2:KeyDimension ;
             ns4:scaleType ns4:NominalScale ;
             ns3:description "None"@de ;
             ns3:name "Katon"@de ;
             sh:nodeKind "Literal" ;
-            sh:path <https://register.ld.admin.ch/sfa/lottogewinnepython/1Region> ],
+            sh:path ns1:Region ],
         [ a ns2:MeasureDimension ;
             ns4:scaleType ns4:RatioScale ;
             ns3:description "None"@de ;
             ns3:name "Anzahl gefundene Kleeblätter"@de ;
             sh:nodeKind "Literal" ;
-            sh:path <https://register.ld.admin.ch/sfa/lottogewinnepython/1AnzahlgefundeneKleeblätter> ],
+            sh:path ns1:AnzahlgefundeneKleeblätter ],
         [ a ns2:KeyDimension ;
             ns4:scaleType ns4:NominalScale ;
             ns3:name "Beobachtet von"@de,
@@ -1207,11 +1213,5 @@ ns1:shape a sh:NodeShape,
             ns3:description "None"@de ;
             ns3:name "Jahr"@de ;
             sh:nodeKind "None" ;
-            sh:path <https://register.ld.admin.ch/sfa/lottogewinnepython/1Jahr> ],
-        [ a ns2:MeasureDimension ;
-            ns4:scaleType ns4:RatioScale ;
-            ns3:description "None"@de ;
-            ns3:name "Anzahl Lottogewinne"@de ;
-            sh:nodeKind "Literal" ;
-            sh:path <https://register.ld.admin.ch/sfa/lottogewinnepython/1AnzahlLottogewinne> ] .
+            sh:path ns1:Jahr ] .
 
