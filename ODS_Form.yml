@@ -4,14 +4,14 @@
 
 identifier: "lottogewinnepython@claudio.ch" #string of identifier, expected in the following structure: [Source-Dataset-ID]@[Source-Organisation-ID] Todo: this is not true, is changed in LINDAS-Harvester.
 
-creator: "https://opendata.swiss/organization/schweizerisches-bundesarchiv-bar" #URI of organization from list of opendata.swiss organizations https://register.ld.admin.ch/opendataswiss/org
-publisher: "https://opendata.swiss/organization/schweizerisches-bundesarchiv-bar" #string with the name of publishing organization
+creator: "https://register.ld.admin.ch/opendataswiss/org/schweizerisches-bundesarchiv-bar" #URI of organization from list of opendata.swiss organizations https://register.ld.admin.ch/opendataswiss/org
+publisher: "https://register.ld.admin.ch/opendataswiss/org/schweizerisches-bundesarchiv-bar" #string with the name of publishing organization
 
 themes: "" #list (separated by ";") of URIs of themes from list of opendata.swiss themes https://register.ld.admin.ch/opendataswiss/category/
 
 rights: "https://ld.admin.ch/vocabulary/TermsOfUse/Open-Use" #URI of one of the four defined terms for the terms of use from https://ld.admin.ch/vocabulary/TermsOfUse      
 #note on usage: 1. is being retired by DCAT-AP but is already implemented in all LINDAS datasets 2. should only be used if license is used for Creative Commons license, in which case the terms of used can be kept in rights.
-license: "" #URI of the legal basis for the creation of the dataset from fedlex      
+license: "https://ld.admin.ch/vocabulary/TermsOfUse/Open-Use" #URI of the legal basis for the creation of the dataset from fedlex      
 #note on usage: 1. should be attached to dcat:distribution, which has not been implemented in LINDAS datasets 2. should have the information currently stored in dct:rights, legal basis should instead be stored as a related resource (dct:relation) 
 
 
@@ -29,9 +29,10 @@ documentation: "" #url that refers to document or page about the distribution
 qualified relation: "" #list (separated by ";") of URIs of the identifiers of related datasets on opendata.swiss
 
 
-temporal start: "2010-01-01" #start of time period covered by dataset formatted as xsd:date / ISO 8601 "yyyy-mm-dd", multiple periods can be included and must be separated by ";"
-temporal end: "2010-01-01" #end of time period covered by dataset formatted as xsd:date / ISO 8601, multiple periods can be included and must be separated by ";"
+temporal start: "2020-01-01" #start of time period covered by dataset formatted as xsd:date / ISO 8601 "yyyy-mm-dd", multiple periods can be included and must be separated by ";"
+temporal end: "2020-01-01" #end of time period covered by dataset formatted as xsd:date / ISO 8601, multiple periods can be included and must be separated by ";"
 
 spatial: "Switzerland" #string with the name of the region which the dataset is about in english
 
 accrual periodicity: "" #URI according to schema http://publications.europa.eu/resource/authority/frequency
+

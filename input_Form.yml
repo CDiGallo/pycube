@@ -1,5 +1,5 @@
 ---
-dataset-URI: "https://register.admin.ch/sfa/lottogewinnepython"
+dataset-URI: "https://register.ld.admin.ch/sfa/lottogewinnepython"
 name_DE: "lottogewinnepython"
 name_FR: ""
 name_IT: ""
@@ -19,7 +19,7 @@ source creation-date: "2024-07-05"  #must be formatted as xsd:date / ISO 8601 "y
 dataset publication-date: "2024-07-05" #must be formatted as xsd:date / ISO 8601
 
 #Must have at least one of these
-work example application: "" #if applicable, must be the name of a custom application(s) such as "hydrodaten" or "strompreis" (separated by ";" if multiple)   must be formated as it is written in the https://ld.admin.ch/application/ URI
+work example application: "https://ld.admin.ch/application/visualize" #if applicable, must be the name of a custom application(s) such as "hydrodaten" or "strompreis" (separated by ";" if multiple)   must be formated as it is written in the https://ld.admin.ch/application/ URI
 work example visualize: "https://ld.admin.ch/application/visualize" #if applicable, must be url of dataset on visualize    if present, must have work example application visualize (or it will be written automatically)
 work example SPARQLendpoint: "" #if applicable, must be the URL of the SPARQL endpoint with the graph preselected
 
@@ -34,7 +34,6 @@ dataset publisher: "BAR" #URI of the platform or database used for publication u
 next modification date: #the date of the next planned update of the dataset, must be formatted as xsd:date / ISO 8601
 
 example resource: "soon-to-come" #URI of a triple / resource in the dataset which serves as an example for introduction to the dataset
-
 
 creative work status: "https://ld.admin.ch/vocabulary/CreativeWorkStatus/Published" #You can also choosse "draft" https://ld.admin.ch/vocabulary/CreativeWorkStatus/Draft
 
